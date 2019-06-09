@@ -1,0 +1,730 @@
+@charset "utf-8";
+@font-face{
+	font-family: Montserrat, "Montserrat Black", "Montserrat Extra Bold", "Montserrat Hairline", "Montserrat Light", "Montserrat Semi Bold", "Montserrat Ultra Light";
+	
+	src: url(../fonts/Monserrat-Bold.otf);
+	src:url(../fonts/Montserrat-Light.otf);
+	src:url(../fonts/Montserrat-Regular.otf);
+	src:url(../fonts/Montserrat-SemiBold.otf);
+	src: url(../fonts/Montserrat-UltraLight.otf);	
+	}
+*{
+box-sizing: border-box;
+}
+body {
+	text-size-adjust: none!important;
+	font-style: normal;
+	font-weight: 400;
+	font-family: Montserrat, "Montserrat Black", "Montserrat Extra Bold", "Montserrat Hairline", "Montserrat Light", "Montserrat Semi Bold", "Montserrat Ultra Light";
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 auto;
+	width: 960px;
+	background-image: url(../img/fondo_web-01.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	
+}
+#general{
+	background-image: url(http://impalacg.com/mailing/0001-01.png);	
+	position: absolute;
+	z-index: 1;
+    margin: 0 auto;
+    width: 960px;
+	}
+
+#agencia img{
+	width: 100%;
+	}
+#agencia p{
+	margin: 10px;
+	text-align: center;
+	padding:  80px 120px 0px 120px;
+	
+	font-size: 14px;
+	font-weight: lighter;
+	}
+#agencia h1{
+	margin: 10px;
+	text-align: center;
+	padding:  5px 40px 70px 40px;
+	
+	font-weight: lighter;
+	font-size: 14px;
+	}
+#agencia h1 strong{
+	color: #F08C1B;
+	font-weight: normal;
+	}
+#pilares{
+	width: auto;
+	margin: 0px 180px 0px 180px;
+	padding: 0px 0px 0px 0px;
+}
+#pilares article img{
+	width: 60px;
+	/*height: 35px;*/
+	padding: 0px 45px;
+	
+	}
+#pilares article{
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	width: 140px;
+	height: 100px;
+		}
+
+#pilares article h2{
+	font-size: 9px;
+	color: #808080;
+	font-weight: normal;
+	text-align:center;
+	}
+#copy img{
+	width: 100%;
+	}
+#servicios{
+	/*width: 80%;*/
+	height: 400px;
+	margin: 40px 100px 90px 100px;
+	padding:  0px 0px 0px 0px;
+		}
+#servicios article{
+	display: inline-block;
+	width: 250px;
+	height: 180px;
+	float: left;		
+	}
+#servicios article img{
+	width: 10px;
+	height: 10px;
+	display: inline;
+	}
+#servicios article h3{
+	color: #808080;
+	font-weight: normal;
+	padding:  0px; 
+	margin-top: 0px;
+	}
+#servicios article p{
+	display:inline;
+	color: #808080;
+	font-weight: lighter;
+	font-size: 12px;
+	margin-left: 5px;
+	text-align: justify;
+	}
+#servicios article p strong a{
+	color: #FF8400;
+	text-decoration: none;
+	text-align: justify;
+	}
+#servicios article #prom{
+	margin-top: -400px;
+	color: #FF9D00;
+	}
+#pie_pagina img{
+	margin-top: -90px;
+	}
+#texto{
+	margin-top: -10px;	
+	}
+#texto img{
+	width: 10px;
+	padding: 0px 10px 0px 0px;
+	}
+#texto p{
+	color: #FFFFFF;	
+	font-size: 14px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	}
+
+#correo img, p{
+	display: inline-block;
+	
+	}
+#correo{
+	width: auto;
+	padding: 0px 0px 0px  0px;
+	display: inline-block;
+	margin: 40px 0px 0px 90px;
+	}
+#correo img{
+	margin: 0px 10px 0px 0px;
+	}
+#telefono{
+	width: auto;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 30px;
+	display: inline-block;
+	
+	}
+#telefono p{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 10px 0px;
+	}
+#telefono p span{
+	color: #808080;
+	}
+#telefono img{
+	margin: 0px 0px 0px 0px;	
+	}
+#direccion{
+	margin: -10px 0px 0px 320px;
+	}
+#redes{
+	padding: 20px 0px;
+	width: auto;
+	margin: 0px 320px 0px 320px;
+	
+	}
+
+#redes img {
+	width: 40px;	
+	margin: 10px 5px;
+	display: inline-block;
+	}
+#copyright p{
+	color: #808080;
+	font-size:9px;
+	margin: 0px 350px;
+	padding: 0px 0px 20px 0px;
+	}
+/*inician estilos de ventana modal*/
+.contenedor{
+	
+	}
+a.open{
+	background-color: #F08C1B;
+	/*border-radius: 5px;*/
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: lighter;
+	/*margin: 0px 0px 0px 0px;*/
+	padding: 10px 15px;
+	position: fixed;
+	text-decoration: none;
+	left: 80%;
+	/*text-shadow: 2px 2px 0px #000000;*/
+	transition: background-color 1s;
+	z-index: 2;
+	
+	}
+a.open:hover{
+	background-color: #EA661C;
+	transition: background-color 2s;
+		}
+section.modalDialog{
+	background-color: rgba(0,0,0,0.8);
+	bottom:0;
+	top:0;
+	left:0;
+	right:0;
+	opacity: 0;
+	position: absolute;
+	z-index: 2;
+	transition: opacity 1s;
+	display: none;
+	}
+section.modalDialog:target{
+	opacity: 1;
+	display: block;
+	}
+.modalDialog h2{
+	font-weight: normal;
+	font-size: 18px;
+	margin: 0px 0px 20px 0px;
+	text-align: center;
+	padding: 0px 80px 0px 80px;
+	}
+.modalDialog form{
+	margin: 0px 0px 30px 13px;
+	}
+.modalDialog img{
+	width: 10px;
+	}
+.modalDialog p{
+	color: #808080;
+	font-size: 12px;
+	margin: -5px 0px 0px 0px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	}
+.modalDialog p span{
+	color: #D1D1D1;
+		}
+a.close{
+	background-color: #F08C1B;
+	border-radius: 100%;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 28px;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	text-align: center;
+	text-decoration: none;
+	width: 28px;
+	height: 28px;
+	margin: auto;
+	}
+a.close:hover{
+	background-color: #59595A;
+	
+	}
+section.modal{
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 10px #000000;
+	border-radius: 5px;
+	color: #F08C1B;
+	margin: 10% auto;
+	padding: 20px;
+	position: relative;
+	width: 400px;
+	}
+input{
+	color: #FFFFFF;
+	background-color: #C9C9C9;
+	border: none;
+	padding: 10px 0px 10px 10px;
+	font-family: Montserrat, "Montserrat Black", "Montserrat Extra Bold", "Montserrat Hairline", "Montserrat Light", "Montserrat Semi Bold", "Montserrat Ultra Light";
+	font-weight: lighter;
+	}
+input:hover{
+	background-color: #59595A;
+	}
+textarea{
+	color: #FFFFFF;
+	background-color: #C9C9C9;
+	border: none;
+	margin: 5px 0px 0px 0px;
+	padding: 10px 0px 40px 10px;
+	width: 93.5%;
+	font-family: Montserrat, "Montserrat Black", "Montserrat Extra Bold", "Montserrat Hairline", "Montserrat Light", "Montserrat Semi Bold", "Montserrat Ultra Light";
+	font-weight: lighter;
+	font-size: 12px;
+	}
+textarea:hover{
+	background-color: #59595A;
+	}
+.input_50{
+	width: 44.9%;
+	margin: 5px 0px 0px 0px;
+	display: inline-block;
+	font-size: 12px;
+	}
+.input_100{
+	width: 93.5%;
+	margin: 5px 0px 0px 0px;
+	font-size: 12px;
+	}
+.btn_enviar{
+	padding: 5px 10px;
+	margin: 10px 0px 0px 130px;
+	background-color: #F08C1B;
+	
+	}
+/*terminan estilos ventana modal*/
+#catalogo{
+	position: fixed;
+	bottom: 0;
+	left: 0%;	
+	
+	}
+.descarga{
+	margin: 0px 0px 40px 0px;
+	}	
+.rebote{
+	margin: 0px 0px 0px -20px;
+	animation: 2s rebote infinite;
+	display: inline-block;
+	}
+#form-movil{
+	display: none;
+	}
+#cat-movil{
+	 display: none;
+	 }
+	
+@-webkit-keyframes rebote{
+	20%, 50%, 80%{
+		transform: translateY(0px);
+		}
+	40%{
+		transform: translateY(-25px);
+		}
+	60%{
+		transform: translateY(-15px);
+		}
+	}
+
+@media screen and (max-width:768px){
+	body{
+		width: 768px;
+		}
+	#agencia img{
+		width: 100%;
+		}
+	#pilares{
+		width: auto;
+		padding: 0px 0px;
+		margin: 0px 0px 0px 3px;
+		
+		}
+	#pilares article{
+		width: 150px;
+		margin: 0px 19px;
+		
+		}
+	#pilares article img{
+		width: 60px;
+		margin: 0px 0px;
+		}
+	#pilares article h2{
+		margin: 0px 0px;
+		}
+	#copy img{
+		width: 100%;
+		}
+	#servicios{
+		width: 100%;
+		padding: 0px 0px 0px 0px;
+		margin: 20px 0px 80px 0px;
+		}
+	#servicios article{
+		width: 200px;
+		padding: 10px 0px;
+		margin: 0px 0px 0px 40px;
+		
+		}
+	#pie_pagina{
+		
+		width: 100%;
+		}
+	#pie_pagina img{
+		width: 100%;
+		}
+	#cat-movil{
+		display: block;
+		background-color: #191919;
+		padding: 20px 0px 20px 0px;
+		margin: -10px 0px 0px 0px;
+		}
+	#cat-movil .desc-movil{
+		margin: 30px 0px 30px 290px;
+		width: 200px;
+		}
+	#cat-movil .btn-movil{
+		margin: 60px 0px 0px -25px;
+		animation: 2s rebote infinite;
+		}
+	#form-movil{
+		display: block;
+		position: relative;
+		width: 48%;
+		height: 80px;
+		top: 30px;
+		left: 380px;
+		margin: -20px 0px 300px 0px;
+		}
+	#form-movil h2{
+		color: #F08C1B;
+		text-align: justify;
+		font-size: 15px;
+		margin: 0px 0px 30px 5px;
+				}
+	
+	#form-movil .btn_enviar{
+		margin: 5px 0px 0px 230px;
+		}
+	#texto {
+		display: block;
+				}
+	#correo{
+		position: absolute;
+		width: 50%;
+		padding: 0px 0px 0px 0px;
+		margin: -290px 0px 0px 20px;
+			
+			}
+			
+	#correo p{
+		font-size: 10px;
+		}
+	#correo img{
+		padding: 0;
+		margin: 0;
+		}
+	#telefono{
+		position: absolute;
+		width: 50%;
+		padding: 0px 0px 0px 0px;
+		margin: -250px 0px 0px 20px;
+		}
+	#telefono p{
+		font-size: 10px;
+		}
+	#telefono img{
+		padding: 0;
+		margin: 0;
+		}
+	#direccion{
+		position: absolute;
+		width: 50%;
+		padding: 0px 0px 0px 0px;
+		margin: -220px 0px 0px 20px;
+		}
+	#direccion p{
+		font-size: 10px;
+		}
+	#direccion img{
+		padding: 0;
+		margin: 0;
+		}
+	#redes {
+		padding: 0px;
+		margin: 0px 220px;
+		}
+	#copyright p {
+		padding: 0px;
+		margin: 0px 250px 20px 250px;
+		}
+	a.open{
+		display: none;
+		opacity: 0;
+		}
+	#catalogo{
+		display: none;
+		}
+	}
+
+@media screen and (max-width:480px) {
+
+body{
+	width: 480px;
+	background-image: url("http://impalacg.com/mailing/0001.png");
+	-webkit-text-size-adjust: none!important;
+	font-family: Montserrat, "Montserrat Black", "Montserrat Extra Bold", "Montserrat Hairline", "Montserrat Light", "Montserrat Semi Bold", "Montserrat Ultra Light";
+}
+#agencia img{
+	width: 100%;
+	}
+#agencia p{
+	width: 400px;
+	padding: 20px 30px 0px 30px;
+	margin: 10px 0px 0px 0px;
+	
+	}
+#agencia h1{
+	width: 360px;
+	}
+#pilares{
+	padding: 0px;
+	margin: 0px 0px 30px 50px;
+}
+#servicios{
+	height: 500px;
+	margin: 20px 0px 0px 0px;
+	}
+#servicios article{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 20px;
+	}
+
+#pie_pagina img{
+	
+	margin: 10px 0px 0px 0px;
+	}
+#cat-movil{
+	padding: 20px 0px 20px 0px;
+	
+	}
+#cat-movil .desc-movil{
+	margin: 0px 0px 30px 140px;
+	}
+#cat-movil .btn-movil{
+	margin: 0px 0px 0px -25px;
+	}
+
+#texto{
+	width: 100%;
+	padding:0;
+	margin:0;
+	display: block;
+	position: absolute;
+	
+	}
+#form-movil{
+	width: 80%;
+	height:auto;
+	top: 10px;
+	left: 0px;
+	margin:0px 0px 40px 50px;
+	padding: 0;
+	position: relative;
+	}
+#form-movil .btn_enviar{
+	margin: 5px 0px 0px 125px;
+	}
+#correo, #telefono, #direccion, #redes, #copyright{
+	position: relative;
+	
+}
+#correo{
+	display: inline-block;
+	width: 80%;
+	margin: 0px 0px 0px 60px;
+	}
+#telefono{
+	display: inline-block;
+	margin: 0px 0px 0px 120px;
+		
+}
+
+#direccion{
+	width: 70%;
+	margin: 0px 0px 0px 90px;
+	padding: 0;
+}
+#direccion img{
+	margin: 0px 5px;
+	}
+
+#redes{
+	display: inline-block;
+	width: 80%;
+	margin: 0px 0px 0px 80px;
+	padding: 0px 0px 0px 0px;
+	
+	}
+#copyright{
+	width: 80%;
+	margin: 0px 0px 0px 100px;
+	padding: 0px 0px 0px 0px;
+	
+	}
+#copyright p {
+		padding: 0px;
+		margin: 0px 0px 20px 0px;
+		}
+}
+
+@media screen and (max-width:360px) {
+ 
+
+body {
+	width: 360px;
+	background-image: url("http://impalacg.com/mailing/0001.png");
+	-webkit-text-size-adjust: none!important;
+	font-family: Montserrat, "Montserrat Black", "Montserrat Extra Bold", "Montserrat Hairline", "Montserrat Light", "Montserrat Semi Bold", "Montserrat Ultra Light";
+}
+
+#agencia{
+	
+	}
+#agencia img{
+	width: 100%;
+	}
+#agencia p{
+	width: 250px;
+	padding: 10px 0px 0px 0px;
+	margin: 10px 0px 0px 40px;
+	font-size: 12px;
+}
+#agencia h1{
+	width: 250px;
+	margin: 10px 0px 20px 40px;
+	padding: 0px;
+	font-size: 12px;
+	}
+#pilares{
+	width: 300px;
+	margin: 0px 0px 0px 60px;
+	}
+#pilares article img{
+	width: 50px;
+	padding: 0px 10px 0px 10px;
+	margin: 0px 0px 0px 0px;	
+	}
+#pilares article{
+	display: inline-block;
+	width: 70px;
+	}
+#pilares article h2{
+	font-size: 9px;
+	margin: 0px 0px 0px 0px;
+	}
+#servicios{
+	width: 280px;
+	margin: 20px 0px 0px 40px;
+	}
+#cat-movil{
+	width: 85%;
+	padding: 20px 0px 0px 60px;
+	margin: -10px 0px 0px 0px;
+	}
+#cat-movil .desc-movil{
+	margin: 0px 0px 30px 0px;
+	padding: 0px;
+	}
+#cat-movil .btn-movil{
+	margin: 20px 0px 0px -25px;
+	}
+#form-movil{
+	width: 80%;
+	height:auto;
+	top: 10px;
+	left: 0px;
+	margin:0px 0px 30px 40px;
+	padding: 0;
+	position: relative;
+	}
+#form-movil h2{
+	text-align: center;
+	}
+#form-movil .input_50{
+	width: 44.3%;
+	}
+#form-movil .btn_enviar{
+	margin: 5px 0px 0px 155px;
+	}
+#correo{
+	display: inline-block;
+	width: 300px;
+	margin: 0px 0px 0px 50px;
+	}
+#correo p{
+	margin: 0px;
+	padding: 0px;
+	}
+#correo img{
+	margin: 0px;
+	padding: 0px;
+	}
+#telefono {
+	width: 300px;
+	margin: 0px 0px 0px 50px;
+	}
+#direccion{
+	width: 300px;
+	margin: 0px 0px 0px 50px;
+	}
+#redes {
+	width: 300px;
+	margin: 0px 0px 0px 50px;
+	}
+#redes img{
+	width: 30px;
+	}
+#copyright{
+	width: 300px;
+	padding:0px;
+	margin: 0px 0px 0px 50px;
+	}
+
+}
+
+
+
